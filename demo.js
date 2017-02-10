@@ -1,3 +1,5 @@
+windows.onload = ready;
+function ready() {
 var data = d3.range(1000).map(d3.randomBates(10));
 var formatCount = d3.format(",.0f");
 var svg = d3.select("svg"),
@@ -33,3 +35,4 @@ g.append("g")
     .attr("class", "axis axis--x")
     .attr("transform", "translate(0," + height + ")")
     .call(d3.axisBottom(x));
+}

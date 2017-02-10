@@ -1,4 +1,4 @@
-windows.onload = ready;
+window.onload = ready;
 function ready() {
 var data = d3.range(1000).map(d3.randomBates(10));
 var formatCount = d3.format(",.0f");
